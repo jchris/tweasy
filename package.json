@@ -1,0 +1,26 @@
+{
+  "name" : "tweasy"
+, "description" : "OAuth-enabled Twitter Client with streaming and regular API calls"
+, "homepage" : "http://github.com/jchris/tweasy"
+, "version" : "0.1.0"
+, "author" : "J Chris Anderson <jchris@couch.io> (http://jchrisa.net)"
+, "contributors" : []
+, "repository" : 
+  { "type" : "git"
+  , "url" : "http://github.com/jchris/tweasy.git"
+  }
+, "bugs" :
+  { "mail" : "jchris@couch.io"
+  , "web" : "http://github.com/jchris/tweasy/issues"
+  }
+, "directories" : { "doc" : "./doc", "man" : "./man", "lib" : "./lib" }
+, "engines" : { "node" : ">=0.2.0" }
+, "licenses" :
+  [ { "type" : "Apache 2.0"
+    , "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ]
+, "main" : "./lib/tweasy"
+, "dependencies": 
+  { "oauth" : ">=0.8.1" }
+}
