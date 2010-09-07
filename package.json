@@ -2,7 +2,7 @@
   "name" : "tweasy"
 , "description" : "OAuth-enabled Twitter Client with streaming and regular API calls"
 , "homepage" : "http://github.com/jchris/tweasy"
-, "version" : "0.1.1"
+, "version" : "0.1.2"
 , "author" : "J Chris Anderson <jchris@couch.io> (http://jchrisa.net)"
 , "contributors" : []
 , "repository" : 
