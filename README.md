@@ -13,7 +13,7 @@ First you need your OAuth credentials, eg your application's `consumer_key` and 
 
 Once you have that data, do this to get a Twitter Client instance.
 
-    var sys = require('sys')
+    var util = require('util')
       , tweasy = require("tweasy")
       , OAuth = require("oauth").OAuth
       ;
@@ -34,7 +34,7 @@ Now that you have the instance, let's get some Tweets from a user:
     twitterClient.userTimeline({screen_name : "jchris", count:100},
       function(er, tweets) {
         for (var i=0; i < tweets.length; i++) {
-          sys.puts(tweets[i].text);
+          util.puts(tweets[i].text);
         };
       });
 
@@ -45,7 +45,7 @@ You can also update your status:
     twitterClient.updateStatus("testing Tweasy from Node.js", 
       function(er, resp){
         if (!er) {
-          sys.puts("you tweeted!")
+          util.puts("you tweeted!")
         }
       });
 
@@ -55,14 +55,14 @@ You can even listen to the User Stream for your logged-in user:
 
     var stream = twitterClient.userStream();
     stream.addListener("json", function(json){
-      sys.puts(sys.inspect(json));
+      util.puts(util.inspect(json));
     });
 
 ### Get a users's profile
 
     twitterClient.userProfile({screen_name:"jchris"}, 
       function(er, profile){
-        sys.puts(profile.name);
+        util.puts(profile.name);
       });
 
 ### More
